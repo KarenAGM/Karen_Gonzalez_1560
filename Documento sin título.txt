@@ -1,0 +1,8 @@
+﻿def sum(lista):
+    if len(lista) == 1:
+        return lista[0]
+    else:
+        return lista[0] + sum(lista[1:len(lista):1])
+def main():
+    print(sum([1,2,4]))    
+main()
